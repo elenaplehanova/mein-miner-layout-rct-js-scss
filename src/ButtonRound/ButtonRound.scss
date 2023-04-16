@@ -1,0 +1,10 @@
+.button-round {
+    background-color: var(--clr-light);
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../public/assets/icons/search.svg");
+}

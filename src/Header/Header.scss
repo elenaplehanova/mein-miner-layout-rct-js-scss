@@ -1,0 +1,91 @@
+$header-width: 73.75rem;
+
+.header-first {
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-light);
+
+    .header-first-elements {
+        display: flex;
+        width: $header-width;
+        margin: auto;
+
+        &__contacts {
+            display: flex;
+            font-size: 0.875rem;
+            gap: 0.5rem;
+            padding-block: 1rem;
+            &__phone {
+                margin-left: 2rem;
+            }
+        }
+
+        &__socialmedia {
+            display: flex;
+            gap: 1rem;
+            margin-left: auto;
+        }
+    }
+}
+
+.header-second {
+    background-color: var(--clr-white);
+
+    .header-second-elements {
+        display: flex;
+        width: $header-width;
+        margin: auto;
+        align-items: center;
+
+        &__logo {
+            padding-block: 1.25rem;
+            font-weight: 800;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            background: var(--background-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    .navigation {
+        &__list {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            margin-right: 3rem;
+            margin-left: 3.625rem;
+        }
+
+        &__list-item {
+        }
+
+        &__list-link {
+            color: var(--clr-dark);
+            text-decoration: none;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            .button-dropdown ::after {
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 0;
+                margin-left: 0.255em;
+                vertical-align: 0.255em;
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+            }
+        }
+    }
+
+    .navbar {
+        display: flex;
+        gap: 0.625rem;
+        margin-left: auto;
+    }
+}

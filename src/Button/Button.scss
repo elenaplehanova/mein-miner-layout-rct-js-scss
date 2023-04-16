@@ -1,0 +1,26 @@
+.button-base {
+    border-radius: 3.125rem;
+    background: var(--background-gradient);
+    border: 0;
+    color: var(--clr-white);
+    padding: 0.6875rem 1.6875rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.8125rem;
+
+    &:hover:enabled {
+        box-shadow: 0px 4px 20px rgba(26, 11, 115, 0.4);
+        border-radius: 50px;
+    }
+
+    &:active:enabled {
+        background: linear-gradient(0deg, rgba(24, 21, 75, 0.6), rgba(24, 21, 75, 0.6)),
+            linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%);
+    }
+
+    &:disabled {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+            linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%);
+        cursor: auto;
+    }
+}

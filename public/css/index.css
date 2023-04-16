@@ -1,0 +1,32 @@
+/* ----------------- */
+/* Custom properties */
+/* ----------------- */
+
+:root {
+    /* colors */
+    --clr-dark: hsl(227, 9%, 21%);
+    --clr-dark-blue: hsl(243, 56%, 19%);
+    --clr-grey: hsl(0, 0%, 72%);
+    --clr-light: hsl(213, 58%, 96%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --clr-text: var(--clr-dark);
+    --clr-header: var(--clr-dark-blue);
+    --clr-main-background: var(--clr-light);
+
+    --background-gradient: linear-gradient(73.56deg, #0d748b -10.13%, #1a0b73 75.49%);
+
+    /* font-families */
+    --ff-sans-normal: "Nunito Sans", sans-serif;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--clr-text);
+    background-color: var(--clr-main-background);
+    line-height: 1.45;
+    min-height: 100vh;
+}
